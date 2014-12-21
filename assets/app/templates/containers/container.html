@@ -1,0 +1,96 @@
+<div class="container-fluid">
+  <ol class="breadcrumb">
+    <li><a href="#/containers">Containers</a></li>
+    <li class="active">{ model:Id }</li>
+  </ol>
+</div>
+
+<div class="container-fluid">
+  <div class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Id</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Id }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Name }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Image</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">
+          <a rv-href="model.getImageUrl < :Image">{ model:Config.Image }</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Path</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Path }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Args</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Args | json }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Ports</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:NetworkSettings.Ports | json }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Hostname</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Config.Hostname }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">IPAddress</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:NetworkSettings.IPAddress }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Cmd</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Config.Cmd | json }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Entrypoint</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Entrypoint }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Volumes</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Volumes | json }</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Created</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">{ model:Created }</p>
+      </div>
+    </div>
+  </div>
+</div>
